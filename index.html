@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <video id=example-video width=960 height=540 class="video-js vjs-default-skin" controls>
+        <source
+           src="https://s3.ap-south-1.amazonaws.com/hls.piyushgarg.dev/outputs/index.m3u8"
+           type="application/x-mpegURL">
+      </video>
+     
+
+    
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+
+    <script>
+        var player = videojs('example-video');
+        player.play();
+        </script>
+
+</body>
+</html>
